@@ -46,47 +46,54 @@
     <session id="-1488439520">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="2" />
+          <entry key="js" value="5" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="js" value="94" />
           <entry key="json" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="74" lean-forward="true" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simpleChain.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+            <state relative-caret-position="95">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -101,6 +108,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -109,9 +117,9 @@
         <option value="$PROJECT_DIR$/simpleChain_20180810.js" />
         <option value="$PROJECT_DIR$/../simpleChain_orig.js" />
         <option value="$PROJECT_DIR$/levelSandbox.js" />
-        <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/simpleChain.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/simpleChain.js" />
+        <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
@@ -144,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,14 +163,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.8.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,11 +230,12 @@
       <updated>1533777977063</updated>
       <workItem from="1533777982644" duration="114801000" />
       <workItem from="1535294401297" duration="301000" />
+      <workItem from="1535295268109" duration="2428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115365000" />
+    <option name="totallyTimeSpent" value="117793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -239,6 +248,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -325,9 +335,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../submit_v2/simpleChain_bk.js" />
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -335,13 +342,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleChain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+        <state relative-caret-position="2831">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="74" lean-forward="true" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
         </state>
       </provider>
     </entry>
