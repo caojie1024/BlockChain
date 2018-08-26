@@ -65,7 +65,7 @@ class Blockchain{
   }
 
   // Get block height
-     getBlockHeight(){
+  async getBlockHeight(){
        return new Promise(function (resolve,reject){
             let i = 0;
             db.createReadStream().on('data', function () {
@@ -82,7 +82,7 @@ class Blockchain{
 
 
     // get block
-     getBlock(blockHeight){
+  async getBlock(blockHeight){
       // return object as a single string
          return new Promise(function(resolve,reject){
              db.get(blockHeight).then(function(value){
@@ -94,10 +94,11 @@ class Blockchain{
 
 
     // validate block
-    validateBlock(blockHeight){
+  async validateBlock(blockHeight){
       // get block object
+        let self = this;
         return new Promise(function(resolve,reject){
-            this.getBlock(blockHeight)
+            self.getBlock(blockHeight)
                 .then(function(block){
                     // get block hash
                     let blockHash = block['hash'];
@@ -119,15 +120,17 @@ class Blockchain{
     }
 
    // Validate blockchain
-    validateChain(){
+   async validateChain(){
       let errorLog = [];
-      this.getBlockHeight().then(height=>{
+     // let self = this;
+      let height = await this.getBlockHeight()
           for (var i = 0; i < height-1; i++) {
               // validate block
-              if (!this.validateBlock(i))errorLog.push(i);
+              let result = await this.validateBlock(i);
+              if ( !result)errorLog.push(i);
               // compare blocks hash link
-              let blockHash = JSON.parse(this.getBlock(i))['hash'];
-              let previousHash =JSON.parse(this.getBlock(i+1))['previousBlockHash'];
+              let blockHash = await this.getBlock(i)['hash'];
+              let previousHash = await this.getBlock(i+1)['previousBlockHash'];
               if (blockHash!==previousHash) {
                   errorLog.push(i);
               }
@@ -138,20 +141,12 @@ class Blockchain{
           } else {
               console.log('No errors detected');
           }
-      })
 
 
     }
 }
 
-//let block = new Block('Ny First Block');
 
-let createBlockchain = new Promise(function(resolve,reject){
-    let bc = new Blockchain();
-    resolve(bc);
-}).then(bc=>{
-    bc.validateBlock(1)
-})
 
 
 
