@@ -7,19 +7,6 @@ const level = require('level');
 const chainDB = './chaindata';
 const db = level(chainDB);
 
-/* ===== Block Class ==============================
-|  Class with a constructor for block 			   |
-|  ===============================================*/
-
-class Block{
-	constructor(data){
-     this.hash = "",
-     this.height = 0,
-     this.body = data,
-     this.time = 0,
-     this.previousBlockHash = ""
-    }
-}
 
 /* ===== Blockchain Class ==========================
 |  Class with a constructor for new blockchain 		|
@@ -46,6 +33,7 @@ class Blockchain{
                        newBlock.previousBlockHash = value['hash'];
                        newBlock.hash = SHA256(JSON.stringify(newBlock)).toString();
                        db.put(height,JSON.stringify(newBlock).toString());
+                       return height;
                    })
                    .catch(function(err){console.error(err)})
            }else{
@@ -53,6 +41,7 @@ class Blockchain{
                newBlock.hash = SHA256(JSON.stringify(newBlock)).toString();
                db.put(height, JSON.stringify(newBlock).toString())
                    .then(function () {
+                       return height;
                        console.log('New Block added')
                    })
                    .catch(function (err) {
@@ -147,6 +136,7 @@ class Blockchain{
 }
 
 module.exports = Blockchain;
+//module.exports = Block;
 
 
 
